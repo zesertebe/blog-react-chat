@@ -1,0 +1,15 @@
+.Container{
+	background-color: var(--colorC);
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 2fr 5fr;
+}
+
+@media only screen and (max-width: 800px) {
+	.Container{
+		display: flex;
+		flex-direction: column;
+	}
+}

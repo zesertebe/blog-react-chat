@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--colorA: #7209B7;
+	--colorAText: #eee;
+	--colorB: #F72585;
+	--colorBText: #eee;
+	--colorC: #3A0CA3;
+	--colorCText: #eee;
+	--colorD: #4351EE;
+	--colorDText: #f1a;
+	--colorE: #4CC9F0;
+	--colorEText: #111;
+}
+

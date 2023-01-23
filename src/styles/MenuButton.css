@@ -1,0 +1,63 @@
+.MenuButton{
+	background-color: transparent;
+	font-size: 2rem;
+	border: none;
+	color: var(--colorEText);
+	transition: .5s;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.MenuButton__selected{
+	color: var(--colorDText);
+}
+.MenuButton:after{
+	background-color: var(--colorD);
+	content: '';
+	position: absolute;
+	right: -50%;
+	height: 40%;
+	width: 80%;
+	top: 30%;
+	border-top-left-radius: 500px;
+	border-bottom-left-radius: 500px;
+	opacity: 0;
+	transition: .5s;
+}
+.MenuButton__selected.MenuButton:after{
+	opacity: 1;
+}
+
+.MenuButton:hover{
+	color: var(--colorDText);
+}
+.MenuButton__tooltip{
+	transition: .5s;
+	position: absolute;
+	opacity: 0;
+	font-size: 1rem;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+.MenuButton__selected .MenuButton__tooltip{
+	opacity: 1;
+}
+.MenuButton:hover .MenuButton__tooltip{
+	opacity: 1;
+}
+@media only screen and (max-width:800px){
+	.MenuButton{
+		font-size:1rem;
+		padding: 10px 0;
+	}
+	.MenuButton__selected:after{
+		display: none;
+	}
+	.MenuButton__tooltip{
+		position: relative;
+		opacity: 1;
+	}
+	
+}
